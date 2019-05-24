@@ -1,5 +1,5 @@
 {
-    "name": "fico7489/laravel-eloquent-join",
+    "name": "namchung/laravel-eloquent-join",
     "description": "This package introduces the join magic for eloquent models and relations.",
     "keywords": [
         "laravel join",
