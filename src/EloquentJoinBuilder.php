@@ -123,7 +123,7 @@ class EloquentJoinBuilder extends Builder
 
         $query = $this->baseBuilder ? $this->baseBuilder : $this;
         $column = $query->performJoin($column);
-        if (false !== $dotPos) {
+        if (false !== $dotPos && $this->useGroupBy) {
             //order by related table field
             $aggregateMethod = $aggregateMethod ? $aggregateMethod : $this->aggregateMethod;
             $this->checkAggregateMethod($aggregateMethod);
